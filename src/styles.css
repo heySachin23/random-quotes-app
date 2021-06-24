@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #5c33f6;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.svg-1,
+.svg-2 {
+  position: absolute;
+  width: 700px;
+  opacity: 0.5;
+}
+
+.svg-1 {
+  top: -350px;
+  left: -200px;
+}
+
+.svg-2 {
+  bottom: -180px;
+  right: -200px;
+}
+
+.quote-container {
+  position: absolute;
+  width: 100%;
+  padding: 60px;
+}
+
+.quote-container::after {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-image: url("../images/quote-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 100px;
+  position: relative;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  left: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2.4rem;
+  position: absolute;
+  bottom: 10%;
+  color: rgb(196, 193, 193);
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  h2 {
+    font-size: 4rem;
+  }
+  h3,
+  button {
+    font-size: 3rem;
+  }
+}
